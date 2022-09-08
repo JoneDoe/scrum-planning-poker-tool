@@ -1,0 +1,21 @@
+<ul class="cards">
+    {{range .payload}}
+        {{ template "card-item.html" . }}
+    {{end}}
+    <li class="btn-scope" data="?">
+        <button class="">
+            <div class="left-icon">?</div>
+            <div class="center-icon">?</div>
+            <div class="right-icon">?</div>
+        </button>
+    </li>
+    <li class="btn-scope" data="C">
+        <button class="">
+            <div class="left-icon">C</div>
+            <div class="center-icon cofee">
+                <img class="normal" src="/img/coffee.png">
+            </div>
+            <div class="right-icon">C</div>
+        </button>
+    </li>
+</ul>
